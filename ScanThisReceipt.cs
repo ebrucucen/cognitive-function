@@ -27,7 +27,7 @@ namespace DB.Hackathon
             HttpResponseMessage response;
 
             // Request headers
-            var uri = "https://uksouth.api.cognitive.microsoft.com/vision/v1.0/ocr?language=unk&detectOrientation=true";
+            var uri = "https://uksouth.api.cognitive.microsoft.com/vision/v1.0/ocr?language=unk&detectOrientation=true†";
             HttpRequestMessage requestMessage=new HttpRequestMessage(HttpMethod.Post,uri);
             requestMessage.Content=new StringContent("{\"url\":\"https://res.cloudinary.com/skillsmatter/image/upload/c_fill,w_300,h_300,g_north_west/v1548242609/gao7av1dbcjfhup11qyd.png\"}", Encoding.UTF8, "application/json");
             //https://res.cloudinary.com/skillsmatter/image/upload/c_fill,w_300,h_300,g_north_west/v1548242609/gao7av1dbcjfhup11qyd.png
